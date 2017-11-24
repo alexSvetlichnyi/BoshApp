@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.alex.boshapp.viewmodel.AddCityViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_name"
+            android:inputType="text"
+            android:text="@={viewModel.city.city}"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_province"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:text="@={viewModel.city.province}"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_population"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:text="@={viewModel.city.population}"
+            android:textColor="@android:color/black" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_latitude"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:text="@={viewModel.city.latitude}"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_longitude"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:text="@={viewModel.city.longitude}"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="@string/add_city_country"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:text="@={viewModel.city.country}"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</layout>

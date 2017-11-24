@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BoshApp</string>
+    <string name="city_population">Population: %s</string>
+    <string name="city_coordinates">Coordinates: lat=%1$s, long=%2$s</string>
+    <string name="search_hint">City Name</string>
+    <string name="search_empty_text">Please enter city into search bar.</string>
+    <string name="there_is_nothing_to_show">There is nothing to show. Please enter another city name</string>
+    <string name="fill_all_fields_message">Please fill all fields or cancel</string>
+    <string name="add_city_dialog_title">Add City</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="add_dialog">Add</string>
+    <string name="add_city_country">Country</string>
+    <string name="add_city_longitude">City longitude</string>
+    <string name="add_city_latitude">City latitude</string>
+    <string name="add_city_population">City population</string>
+    <string name="add_city_province">Province</string>
+    <string name="add_city_name">City name</string>
+</resources>

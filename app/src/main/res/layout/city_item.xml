@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.alex.boshapp.viewmodel.CityItemViewModel"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_city_item"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true"
+        android:onClick="@{viewModel::onItemClick}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@{viewModel.background}"
+            tools:background="@color/color_blue"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@{viewModel.cityName}"
+                tools:text="Kharkiv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@{viewModel.population}"
+                tools:text="Population: 1234"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/white"
+                android:text="@{viewModel.coordinates}"
+                tools:text="Coordinates: lat=%1$f, long=%2$"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>
